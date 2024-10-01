@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsplash Clone</title>
+    <link rel="icon" href="./image/Logo.png">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./script/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <svg class="nzoDf" width="32" height="32" viewBox="0 0 32 32" version="1.1" aria-labelledby="unsplash-home" aria-hidden="false" style="flex-shrink:0"><desc lang="en-US">Unsplash logo</desc><title id="unsplash-home">Unsplash Home</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg>     
+            </div>
+
+            <form class="search">
+            
+                <span class="icon">
+                    <svg class="y_Um7 SWMue K6TWt" width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink:0"><desc lang="en-US">A magnifying glass</desc><path d="M16.5 15c.9-1.2 1.5-2.8 1.5-4.5C18 6.4 14.6 3 10.5 3S3 6.4 3 10.5 6.4 18 10.5 18c1.7 0 3.2-.5 4.5-1.5l4.6 4.5 1.4-1.5-4.5-4.5zm-6 1c-3 0-5.5-2.5-5.5-5.5S7.5 5 10.5 5 16 7.5 16 10.5 13.5 16 10.5 16z"></path></svg>
+                </span>
+                    <input type="search" placeholder="Search photos and illustrations" id="searchBox">
+                    <span class="Visual-search" title="Visual Search">
+                        <svg class="j6Xqz SWMue K6TWt" width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink: 0;"><desc lang="en-US">Visual search</desc><path d="M5 15H3v4c0 1.1.9 2 2 2h4v-2H5v-4ZM5 5h4V3H5c-1.1 0-2 .9-2 2v4h2V5Zm14-2h-4v2h4v4h2V5c0-1.1-.9-2-2-2Zm0 16h-4v2h4c1.1 0 2-.9 2-2v-4h-2v4ZM12 8c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4Zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2Z"></path></svg>
+                </span>
+            </form>
+
+            <ul id="menu">
+                <li>Explore</li>
+                <li>Advertise</li>
+                <li>Get Unsplash+</li>
+            </ul>
+
+            <div class="control-box">
+                <p>Log in</p>
+
+                <input type="file" id="UploadButton" style="display: none;">
+
+                <label for="UploadButton" class="UploadButton">
+                    Submit an image
+                </label>
+            </div>
+            
+            <div class="hamburger">
+                <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink:0"><desc lang="en-US">navigation menu</desc><path d="M3 16h18v2H3v-2ZM3 6v2h18V6H3Zm0 7h18v-2H3v2Z"></path></svg>
+            </div>
+
+        </nav>
+        <div class="ribbon">
+            <ul>
+                <li>Photos</li>
+                <li>Illustrations</li>
+                <li>Unsplash+</li>
+            </ul>
+
+
+            <ul title="scroll list to left">
+                <li class="icon"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink: 0;"><desc lang="en-US">Chevron left</desc><path d="M15.5 18.5 14 20l-8-8 8-8 1.5 1.5L9 12l6.5 6.5Z"></path></svg></li>
+                <li class="icon"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink: 0;"><desc lang="en-US">Chevron right</desc><path d="M8.5 5.5 10 4l8 8-8 8-1.5-1.5L15 12 8.5 5.5Z"></path></svg></li>
+                <li class="menu-list">Photos</li>
+                <li class="menu-list">Illustrations</li>
+                <li class="menu-list">Unsplash+</li>
+                <li>Back To School</li>
+                <li class="active">Wallpapers</li>
+                <li>Nature</li>
+                <li>3D Renders</li>
+                <li>Travel</li>
+                <li>Architecture & Interiors</li>
+                <li>Textures & Patterns</li>
+                <li>Street Photography</li>
+                <li>Film</li>
+                <li>Archival</li>
+                <li>Experimental</li>
+                <li>Animals</li>
+                <li>Fashion & Beauty</li>
+                <li>Peoples</li>
+                <li>Spirituality</li>
+                <li>Business & Work</li>
+                <li>Food & Drink</li>
+                <li>Health & Wellness</li>
+                <li>Sports</li>
+                <li>Current Events</li>
+                <li></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="welcome">
+            <div class="context-box">
+                <div class="row">
+                    <div class="col">
+                        <h1>Unsplash</h1>
+                        <p>The internet’s source for visuals.</p>
+                        <p>Powered by creators everywhere.</p>
+                        <h6>This is not a orignal website, its is a clone project,</h6>
+                        <h6>design by <span style="color: black;cursor: pointer;">Priyanka</span></h6>
+                    </div>
+                    <div class="col">
+
+                    </div>
+                </div>
+
+                <form class="search">
+                    <span class="icon">
+                        <svg class="y_Um7 SWMue K6TWt" width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink:0"><desc lang="en-US">A magnifying glass</desc><path d="M16.5 15c.9-1.2 1.5-2.8 1.5-4.5C18 6.4 14.6 3 10.5 3S3 6.4 3 10.5 6.4 18 10.5 18c1.7 0 3.2-.5 4.5-1.5l4.6 4.5 1.4-1.5-4.5-4.5zm-6 1c-3 0-5.5-2.5-5.5-5.5S7.5 5 10.5 5 16 7.5 16 10.5 13.5 16 10.5 16z"></path></svg>
+                    </span>
+                    <input type="search" placeholder="Search photos and illustrations" id="searchBoxcontent">
+                    <span class="Visual-search2" title="Visual Search">
+                        <svg class="j6Xqz SWMue K6TWt" width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink: 0;"><desc lang="en-US">Visual search</desc><path d="M5 15H3v4c0 1.1.9 2 2 2h4v-2H5v-4ZM5 5h4V3H5c-1.1 0-2 .9-2 2v4h2V5Zm14-2h-4v2h4v4h2V5c0-1.1-.9-2-2-2Zm0 16h-4v2h4c1.1 0 2-.9 2-2v-4h-2v4ZM12 8c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4Zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2Z"></path></svg>
+                    </span>
+                </form>
+
+            </div>
+            <div></div>
+           
+    </section>
+
+    <section class="image-container">
+            <ul id="Album">
+                <li>
+                    <img src="./demo/portrait (1).jpg" loading="lazy">
+                    <div class="title">
+                        <h4>Green tea</h4>
+                        <a href="###" download>
+                            <button>
+                                <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink: 0;"><desc lang="en-US">Arrow pointing down</desc><path d="m19.35 11.625-5.85 5.4V1.5h-3v15.525l-5.85-5.4-2.025 2.25L12 22.425l9.375-8.55-2.025-2.25Z"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <img src="./demo/landscape (1).jpg" loading="lazy">
+                    <div class="title">
+                        <h4>Samsung External Drive</h4>
+                        <a href="###" download>
+                            <button>
+                                <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink: 0;"><desc lang="en-US">Arrow pointing down</desc><path d="m19.35 11.625-5.85 5.4V1.5h-3v15.525l-5.85-5.4-2.025 2.25L12 22.425l9.375-8.55-2.025-2.25Z"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <img src="./demo/portrait (2).jpg" loading="lazy">
+                    <div class="title">
+                        <h4>Capture mood</h4>
+                        <a href="###" download>
+                            <button>
+                                <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink: 0;"><desc lang="en-US">Arrow pointing down</desc><path d="m19.35 11.625-5.85 5.4V1.5h-3v15.525l-5.85-5.4-2.025 2.25L12 22.425l9.375-8.55-2.025-2.25Z"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <img src="./demo/landscape (2).jpg" loading="lazy">
+                    <div class="title">
+                        <h4>Porche image</h4>
+                        <a href="###" download>
+                            <button>
+                                <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink: 0;"><desc lang="en-US">Arrow pointing down</desc><path d="m19.35 11.625-5.85 5.4V1.5h-3v15.525l-5.85-5.4-2.025 2.25L12 22.425l9.375-8.55-2.025-2.25Z"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <img src="./demo/portrait (3).jpg" loading="lazy">
+                    <div class="title">
+                        <h4>Rock cave</h4>
+                        <a href="###" download>
+                            <button>
+                                <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink: 0;"><desc lang="en-US">Arrow pointing down</desc><path d="m19.35 11.625-5.85 5.4V1.5h-3v15.525l-5.85-5.4-2.025 2.25L12 22.425l9.375-8.55-2.025-2.25Z"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <img src="./demo/landscape (3).jpg" loading="lazy">
+                    <div class="title">
+                        <h4>Tokyo night show</h4>
+                        <a href="###" download>
+                            <button>
+                                <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink: 0;"><desc lang="en-US">Arrow pointing down</desc><path d="m19.35 11.625-5.85 5.4V1.5h-3v15.525l-5.85-5.4-2.025 2.25L12 22.425l9.375-8.55-2.025-2.25Z"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <img src="./demo/portrait (4).jpg" loading="lazy">
+                    <div class="title">
+                        <h4>Meteor impact crater</h4>
+                        <a href="###" download>
+                            <button>
+                                <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink: 0;"><desc lang="en-US">Arrow pointing down</desc><path d="m19.35 11.625-5.85 5.4V1.5h-3v15.525l-5.85-5.4-2.025 2.25L12 22.425l9.375-8.55-2.025-2.25Z"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <img src="./demo/landscape (4).jpg" loading="lazy">
+                    <div class="title">
+                        <h4>Samsung Memory</h4>
+                        <a href="###" download>
+                            <button>
+                                <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink: 0;"><desc lang="en-US">Arrow pointing down</desc><path d="m19.35 11.625-5.85 5.4V1.5h-3v15.525l-5.85-5.4-2.025 2.25L12 22.425l9.375-8.55-2.025-2.25Z"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <img src="./demo/portrait (5).jpg" loading="lazy">
+                    <div class="title">
+                        <h4>Italian street Bulb</h4>
+                        <a href="###" download>
+                            <button>
+                                <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink: 0;"><desc lang="en-US">Arrow pointing down</desc><path d="m19.35 11.625-5.85 5.4V1.5h-3v15.525l-5.85-5.4-2.025 2.25L12 22.425l9.375-8.55-2.025-2.25Z"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="./demo/landscape (5).png" loading="lazy">
+                    <div class="title">
+                        <h4>Itachi Uchiha (NARUTO Manga)</h4>
+                        <a href="###" download>
+                            <button>
+                                <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink: 0;"><desc lang="en-US">Arrow pointing down</desc><path d="m19.35 11.625-5.85 5.4V1.5h-3v15.525l-5.85-5.4-2.025 2.25L12 22.425l9.375-8.55-2.025-2.25Z"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <img src="./demo/portrait (6).jpg" loading="lazy">
+                    <div class="title">
+                        <h4>Dark cave </h4>
+                        <a href="###" download>
+                            <button>
+                                <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink: 0;"><desc lang="en-US">Arrow pointing down</desc><path d="m19.35 11.625-5.85 5.4V1.5h-3v15.525l-5.85-5.4-2.025 2.25L12 22.425l9.375-8.55-2.025-2.25Z"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="./demo/landscape (6).jpg" loading="lazy">
+                    <div class="title">
+                        <h4>All GTA characters in one frame</h4>
+                        <a href="###" download>
+                            <button>
+                                <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink: 0;"><desc lang="en-US">Arrow pointing down</desc><path d="m19.35 11.625-5.85 5.4V1.5h-3v15.525l-5.85-5.4-2.025 2.25L12 22.425l9.375-8.55-2.025-2.25Z"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <img src="./demo/portrait (7).jpg" loading="lazy">
+                    <div class="title">
+                        <h4>Samsung ssd nvme 4 generation</h4>
+                        <a href="###" download>
+                            <button>
+                                <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink: 0;"><desc lang="en-US">Arrow pointing down</desc><path d="m19.35 11.625-5.85 5.4V1.5h-3v15.525l-5.85-5.4-2.025 2.25L12 22.425l9.375-8.55-2.025-2.25Z"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="./demo/landscape (7).jpg" loading="lazy">
+                    <div class="title">
+                        <h4>Minimal Wooden interior</h4>
+                        <a href="###" download>
+                            <button>
+                                <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink: 0;"><desc lang="en-US">Arrow pointing down</desc><path d="m19.35 11.625-5.85 5.4V1.5h-3v15.525l-5.85-5.4-2.025 2.25L12 22.425l9.375-8.55-2.025-2.25Z"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </li>               
+                
+                <li>
+                    <img src="./demo/portrait (8).jpg" loading="lazy">
+                    <div class="title">
+                        <h4>Samsung Memory</h4>
+                        <a href="###" download>
+                            <button>
+                                <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink: 0;"><desc lang="en-US">Arrow pointing down</desc><path d="m19.35 11.625-5.85 5.4V1.5h-3v15.525l-5.85-5.4-2.025 2.25L12 22.425l9.375-8.55-2.025-2.25Z"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="./demo/landscape (8).jpeg" loading="lazy">
+                    <div class="title">
+                        <h4>Lamborghini Cian</h4>
+                        <a href="###" download>
+                            <button>
+                                <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink: 0;"><desc lang="en-US">Arrow pointing down</desc><path d="m19.35 11.625-5.85 5.4V1.5h-3v15.525l-5.85-5.4-2.025 2.25L12 22.425l9.375-8.55-2.025-2.25Z"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="./demo/portrait (9).jpg" loading="lazy">
+                    <div class="title">
+                        <h4>Colorfull leaf Lattee</h4>
+                        <a href="###" download>
+                            <button>
+                                <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink: 0;"><desc lang="en-US">Arrow pointing down</desc><path d="m19.35 11.625-5.85 5.4V1.5h-3v15.525l-5.85-5.4-2.025 2.25L12 22.425l9.375-8.55-2.025-2.25Z"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="./demo/landscape (9).jpg" loading="lazy">
+                    <div class="title">
+                        <h4>Door to Heaven</h4>
+                        <a href="###" download>
+                            <button>
+                                <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink: 0;"><desc lang="en-US">Arrow pointing down</desc><path d="m19.35 11.625-5.85 5.4V1.5h-3v15.525l-5.85-5.4-2.025 2.25L12 22.425l9.375-8.55-2.025-2.25Z"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="./demo/portrait (10).jpg" loading="lazy">
+                    <div class="title">
+                        <h4>The japaness Pink leaf tree</h4>
+                        <a href="###" download>
+                            <button>
+                                <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink: 0;"><desc lang="en-US">Arrow pointing down</desc><path d="m19.35 11.625-5.85 5.4V1.5h-3v15.525l-5.85-5.4-2.025 2.25L12 22.425l9.375-8.55-2.025-2.25Z"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="./demo/landscape (10).jpg" loading="lazy">
+                    <div class="title">
+                        <h4>Fantacy Art</h4>
+                        <a href="###" download>
+                            <button>
+                                <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink: 0;"><desc lang="en-US">Arrow pointing down</desc><path d="m19.35 11.625-5.85 5.4V1.5h-3v15.525l-5.85-5.4-2.025 2.25L12 22.425l9.375-8.55-2.025-2.25Z"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="./demo/portrait (11).jpg" loading="lazy">
+                    <div class="title">
+                        <h4>The white sand desert</h4>
+                        <a href="###" download>
+                            <button>
+                                <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink: 0;"><desc lang="en-US">Arrow pointing down</desc><path d="m19.35 11.625-5.85 5.4V1.5h-3v15.525l-5.85-5.4-2.025 2.25L12 22.425l9.375-8.55-2.025-2.25Z"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="./demo/landscape (11).jpg" loading="lazy">
+                    <div class="title">
+                        <h4>The Olmedreca Crews ship</h4>
+                        <a href="###" download>
+                            <button>
+                                <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink: 0;"><desc lang="en-US">Arrow pointing down</desc><path d="m19.35 11.625-5.85 5.4V1.5h-3v15.525l-5.85-5.4-2.025 2.25L12 22.425l9.375-8.55-2.025-2.25Z"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </li>
+
+            </ul>
+    </section>
+
+    <footer>
+        <h6>Unsplash</h6>
+        <div class="container">
+            <div class="col">
+                <ul>
+                    <li><a href="###">About</a></li>
+                    <li><a href="###">Blog</a></li>
+                    <li><a href="###">Community</a></li>
+                    <li><a href="###">Join the team</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <ul>
+                    <li><a href="###">Developers/API</a></li>
+                    <li><a href="###">Press</a></li>
+                    <li><a href="###">Help Center</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <ul>
+                    <li><a href="###">Unsplash Awards</a></li>
+                    <li><a href="###">Unsplash for Education</a></li>
+                    <li><a href="###">Unsplash for iOS</a></li>
+                    <li><a href="###">Apps & Plugins</a></li>
+                    <li><a href="###">Unsplash Studio</a></li>
+                </ul>
+            </div>
+
+            <div class="col social">
+                <a href="###">
+                    <svg class="jdZWf tI_H_ eo9s5 tI_H_" width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink: 0;">
+                        <desc lang="en-US">X (formerly Twitter) icon</desc>
+                        <path d="M13.69 10.622 20.25 3h-1.555l-5.693 6.618L8.454 3H3.21l6.876 10.007L3.21 21h1.554l6.012-6.99L15.578 21h5.245L13.69 10.622Zm-2.126 2.474-.697-.996-5.543-7.93H7.71l4.474 6.399.697.997 5.815 8.317h-2.387l-4.745-6.787Z"></path></svg>
+                </a>
+
+                <a href="###">
+                    <svg class="jdZWf tI_H_ eo9s5 tI_H_" width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink: 0;">
+                        <desc lang="en-US">Facebook icon</desc>
+                        <path d="M22 12c0-5.563-4.5-10-10-10S2 6.5 2 12c0 5 3.688 9.125 8.438 9.875v-6.938H7.874V12h2.563V9.812c0-2.5 1.5-3.874 3.75-3.874 1.124 0 2.25.187 2.25.187v2.438h-1.25c-1.25 0-1.626.75-1.626 1.562V12h2.75l-.437 2.875h-2.313v7C18.313 21.187 22 17 22 12Z"></path></svg>
+                </a>
+
+                <a href="###">
+                    <svg class="jdZWf tI_H_ eo9s5 tI_H_" width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink: 0;">
+                        <desc lang="en-US">Instagram icon</desc>
+                        <path d="M21.933 7.877c-.048-1.064-.219-1.79-.465-2.429a4.874 4.874 0 0 0-1.154-1.77 4.959 4.959 0 0 0-1.77-1.154c-.635-.246-1.361-.417-2.429-.464C15.052 2.012 14.71 2 11.996 2c-2.714 0-3.056.012-4.123.06-1.063.047-1.79.218-2.425.464-.658.254-1.214.599-1.77 1.155a4.959 4.959 0 0 0-1.154 1.77c-.246.634-.417 1.36-.464 2.428C2.012 8.94 2 9.282 2 11.996c0 2.714.012 3.056.06 4.123.047 1.064.218 1.79.464 2.429.254.658.599 1.214 1.155 1.77a4.958 4.958 0 0 0 1.77 1.154c.634.246 1.36.417 2.428.464 1.067.048 1.405.06 4.123.06s3.056-.012 4.123-.06c1.063-.047 1.79-.218 2.429-.464a4.872 4.872 0 0 0 1.77-1.155 4.956 4.956 0 0 0 1.154-1.77c.246-.634.417-1.36.465-2.428.047-1.067.059-1.405.059-4.123s-.016-3.056-.067-4.119Zm-1.798 8.159c-.044.976-.206 1.504-.345 1.857a3.103 3.103 0 0 1-.746 1.15c-.35.35-.683.568-1.151.747-.353.135-.881.301-1.857.345-1.056.047-1.37.06-4.04.06s-2.984-.012-4.04-.06c-.976-.044-1.504-.207-1.857-.345a3.103 3.103 0 0 1-1.15-.746 3.054 3.054 0 0 1-.747-1.151c-.135-.353-.301-.881-.345-1.857-.047-1.056-.06-1.37-.06-4.04s.013-2.984.06-4.04c.044-.976.206-1.504.345-1.857.183-.468.397-.801.746-1.15.35-.35.683-.568 1.151-.747.353-.135.881-.301 1.857-.345 1.056-.047 1.37-.06 4.04-.06s2.984.013 4.04.06c.976.044 1.504.206 1.857.345.468.183.801.397 1.15.746.35.35.568.683.747 1.151.135.353.301.881.345 1.857.047 1.056.06 1.37.06 4.04s-.012 2.988-.06 4.04Zm-8.139-9.17a5.136 5.136 0 1 0 .002 10.27 5.136 5.136 0 0 0-.002-10.27Zm0 8.463a3.333 3.333 0 1 1 0-6.665 3.333 3.333 0 0 1 0 6.665Zm6.536-8.67a1.197 1.197 0 1 1-2.397 0 1.197 1.197 0 1 1 2.397 0Z"></path></svg>
+                </a>
+            </div>
+        </div>
+        <div class="ruler">
+            <div class="logo">
+                <svg class="mSPKn" width="22" height="22" viewBox="0 0 32 32" version="1.1" aria-labelledby="view-homepage" aria-hidden="false" style="flex-shrink: 0;"><desc lang="en-US">Unsplash logo</desc><title id="view-homepage">View homepage</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg>
+                <span>Make something awesome</span>
+            </div>
+            <div class="additional-details">
+                Design by Priyanka
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

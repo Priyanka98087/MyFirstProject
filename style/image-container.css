@@ -1,0 +1,53 @@
+.image-container{
+    position: relative;
+    height: calc(100vh - 130px);
+    padding: 25px;
+    }
+    
+.image-container ul{
+    list-style: decimal;
+    columns: 3;
+    column-gap: 25px;
+}
+.image-container ul li img{
+    width: 100%;
+    image-rendering:crisp-edges;
+    
+}
+.image-container ul li{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+        
+
+/*================================Hover=====================================*/
+
+
+.image-container ul li:hover{
+    cursor:zoom-in;
+} 
+
+/*================================Hover=====================================*/
+
+@media screen and (min-width:1024px) {
+    .image-container ul{
+        columns: 3;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .image-container ul{
+        columns: 2;
+    }
+}
+@media screen and (max-width:767px) {
+    .image-container ul{
+        columns: 1;
+        column-gap: 0;
+    }
+
+    .image-container{
+        padding:25px 0px;
+    }
+}  

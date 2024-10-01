@@ -1,0 +1,122 @@
+body .ribbon{
+    height: 40px;
+    padding: 11px 0px;
+    color: #767676;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+body .ribbon ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+body .ribbon ul:nth-child(1){
+    display: flex;
+    list-style: none;
+    align-items: center;
+    border-right: 1px solid #dbdbdb;
+}
+
+.menu-list{
+    display: none;
+}
+
+body .ribbon ul:nth-child(2)::-webkit-scrollbar {
+    display: none;
+}
+
+body .ribbon ul:nth-child(2){
+    overflow-x: scroll;
+    position: relative;
+}
+
+body .ribbon ul:nth-child(2)::before{
+    position: fixed;
+    display: none;
+    align-items: center;
+    content: " ";
+    height: 50px;
+    width: 70px;
+    background: linear-gradient(to right,#ffffff,#ffffff,transparent);
+}
+
+
+body .ribbon ul:nth-child(2) .icon:nth-child(1){
+    display: none;
+    fill: #555555;
+    position: fixed;
+    top:80px;
+    z-index: 1;
+}
+
+body .ribbon ul:nth-child(2)::after{
+    position: fixed;
+    right: 0;
+    display: none;
+    align-items: center;
+    content: " ";
+    height: 50px;
+    width: 70px;
+    background: linear-gradient(to left,#ffffff,#ffffff,transparent);
+}
+
+
+body .ribbon ul:nth-child(2) .icon:nth-child(2){
+    display: none;
+    fill: #555555;
+    position: fixed;
+    right: 0;
+    top:80px;
+    z-index: 1;
+}
+
+body .ribbon ul:nth-child(2):hover .icon:nth-child(1),
+body .ribbon ul:nth-child(2):hover .icon:nth-child(2){
+    display: block;
+}
+
+body .ribbon ul:nth-child(2):hover::before,
+body .ribbon ul:nth-child(2):hover::after{
+    display: flex;
+}
+
+body .ribbon ul li{
+    padding: 0 15px;
+    cursor: pointer;
+    min-width: fit-content;
+}
+
+body .ribbon ul li:hover{
+    color: black;
+}
+
+
+
+@media screen and (min-width:1024px) {
+    body .ribbon ul:nth-child(1){
+        display: flex;
+    }
+    .menu-list{
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    body .ribbon ul:nth-child(1){
+        display: flex;
+    }
+    .menu-list{
+        display: none;
+    }
+}
+@media screen and (max-width:767px) {
+    body .ribbon ul:nth-child(1){
+        display: none;
+    }
+    .menu-list{
+        display: block;
+    }
+}
