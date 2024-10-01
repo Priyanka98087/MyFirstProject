@@ -6,7 +6,7 @@ SearchForm.forEach(
     function(e){
         e.addEventListener('submit', function(e){
             e.preventDefault();
-            MyAlert('Can\'t Search Images, Database not connected\nWebsite is only for Project purpose.');
+            alert('Can\'t Search Images, Database not connected\nWebsite is only for Project purpose.');
         let searchBox = document.querySelector('#searchBox')
         searchBox.value = ""
         })
@@ -74,8 +74,8 @@ let navLI = navUL.querySelectorAll('li')
 navLI.forEach((e)=>{
     e.addEventListener('click',
         function(){
-            // alert('This is not a Orignal Website, its is a clone project\, \ndesign by Priyanka')
-            MyAlert('This is not a Orignal Website, its is a clone project\, \ndesign by Priyanka')
+            alert('This is not a Orignal Website, its is a clone project\, \ndesign by Priyanka')
+            // MyAlert('This is not a Orignal Website, its is a clone project\, \ndesign by Priyanka')
         }
     )
 })
@@ -85,9 +85,9 @@ let loginP = login.querySelector('p')
 
 loginP.addEventListener('click',
     function(){
-        // alert('Can\'t Login to WebSite,\nits not a Orignal Website\nits is a clone project\, \ndesign by Priyanka')
+        alert('Can\'t Login to WebSite,\nits not a Orignal Website\nits is a clone project\, \ndesign by Priyanka')
         control_box.classList.remove('control-box-active')
-        MyAlert('Can\'t Login to WebSite,\nits not a Orignal Website, its is a clone project \ndesign by Priyanka')
+        // MyAlert('Can\'t Login to WebSite,\nits not a Orignal Website, its is a clone project \ndesign by Priyanka')
     }
 )
 
@@ -97,8 +97,8 @@ let ribbonUL = ribbon.querySelectorAll('ul')
 ribbonUL.forEach((e)=>{
     e.addEventListener('click',
         function(){
-            // alert('This is not a Orignal Website, its is a clone project\, \ndesign by Priyanka')
-            MyAlert('This is not a Orignal Website, its is a clone project\, \ndesign by Priyanka')
+            alert('This is not a Orignal Website, its is a clone project\, \ndesign by Priyanka')
+            // MyAlert('This is not a Orignal Website, its is a clone project\, \ndesign by Priyanka')
       
         }
     )
